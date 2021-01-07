@@ -1,0 +1,2 @@
+﻿$adminPassword = convertto-securestring "2020techadmin!" -asplaintext -force
+New-AzResourceGroupDeployment -ResourceGroupName matomo-dev-rg -TemplateFile D:\matomo\deploy\matomo-vmss-deploy.json -TemplateParameterFile D:\matomo\deploy\matomo-vmss-parameters.json -adminUsername matomoadmin -adminPassword $adminPassword -Verbose

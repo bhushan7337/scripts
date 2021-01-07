@@ -1,0 +1,4 @@
+$TimeStamp = get-date -f yyyyMMddhhmm
+$Source = \\srv-punerep\Softwares\Bhushan\*.bak
+$Destination = "D:\" + $TimeStamp
+Copy-Item -Path $Source -Destination $Destination -Force
